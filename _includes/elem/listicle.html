@@ -1,0 +1,11 @@
+<article>
+  <a href="{{ article.url | prepend: site.baseurl }}" class="picture">
+    <img src="/../../assets/images/small.svg" data-echo="{{ article.cover }}" alt="{{ article.alt }}">
+  </a>
+  <a href="{{ article.url | prepend: site.baseurl }}" class="detail">
+    <span class="section"><small>{{ article.category }}</small></span>
+    <h4>{{ article.title }}</h4>
+    <span class="intro">{{ article.intro }}</span>
+    <span class="author"><small>{{ article.author }}</small></span>
+  </a>
+</article>

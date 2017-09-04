@@ -1,0 +1,20 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  {%include base/head.html%}
+</head>
+<body>
+  {%if page.label == 'lost'%}
+    {%include base/lost.html%}
+  {%else%}
+    {%include base/header.html%}
+    {%include base/main.html  %}
+    {%include base/footer.html%}
+  {%endif%}
+  {%include base/script.html%}
+</body>
+</html>

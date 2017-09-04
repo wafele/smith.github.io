@@ -1,0 +1,4 @@
+<article>
+  <p><small><time>{% assign m = page.date | date: "%-m" %}{{ page.date | date: "%-d" }}{% case m %}{% when '1' %} JANUARI {% when '2' %} FEBRUARI {% when '3' %} MARET {% when '4' %} APRIL {% when '5' %} MEI {% when '6' %} JUNI {% when '7' %} JULI {% when '8' %} AGUSTUS {% when '9' %} SEPTEMBER {% when '10' %} OKTOBER {% when '11' %} NOVEMBER {% when '12' %} DESEMBER {% endcase %}{{ page.date | date: "%Y" }}</time></small></p>
+  {{ content }}
+</article>

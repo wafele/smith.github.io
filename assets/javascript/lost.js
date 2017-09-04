@@ -1,0 +1,1 @@
+WebFontConfig={google:{families:["Source+Sans+Pro:400,600:latin"]}},function(){var e=document.createElement("script");e.src="/assets/javascript/font.js",e.async="true",document.body.appendChild(e)}();

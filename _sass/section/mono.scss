@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 ARTICLE
+2.0 ELEMENT
+  2.1 FIGURE
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 ARTICLE
+--------------------------------------------------------------*/
+
+article > p:first-child {
+  color: #959595;
+  line-height: 1;
+  margin-bottom: .875rem;
+  margin-top: -.125rem;
+}
+
+article li > a,
+article p > a {
+  background-position: 0 -.0625em;
+  background-image: linear-gradient(to top, #222, #222 1px, transparent 1px, transparent);
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 0 0 white, 0 1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+/*--------------------------------------------------------------
+2.0 ELEMENT
+  2.1 FIGURE
+--------------------------------------------------------------*/
+
+figcaption svg {
+  align-self: center;
+  margin-bottom: .125rem;
+  margin-right: .875rem;
+  width: 1rem;
+}
+
+figcaption p {
+  line-height: 1.125;
+  padding-bottom: .25rem;
+  width: 100%;
+}

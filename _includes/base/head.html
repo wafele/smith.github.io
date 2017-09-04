@@ -1,0 +1,18 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="author" content="Tertanda">
+  <meta name="subject" content="Kumpulan pengetahuan tentang ekonomi, finansial, investasi, dsb.">
+  <meta name="description" content="{{page.meta}}">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="google" content="notranslate">
+  <link rel="author" href="https://wafele.com">
+  <link rel="shortcut icon" href="/assets/images/icon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/icon.png">
+  <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url}}">
+  <title>{%if page.label == 'tertanda'%}Smith{%else%}{{page.title}}{%endif%}</title>
+  <style>{%capture include_to_scssify%}{%if page.layout == 'default' and page.label != 'lost' %}{%include sass/index.scss%}{%elsif page.layout == 'article'%}{%include sass/mono.scss%}{%else%}{%include sass/lost.scss%}{%endif%}{%endcapture%}{{include_to_scssify | scssify}}</style>
+</head>

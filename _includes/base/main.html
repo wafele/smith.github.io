@@ -1,0 +1,14 @@
+<main>
+  {%if page.label == 'tertanda'%}
+    {%for article in site.posts%}
+      {%include elem/listicle.html%}
+    {%endfor%}
+  {%elsif page.label == 'ekonomi'%}
+    {%for article in site.categories.ekonomi%}
+      {%include elem/listicle.html%}
+    {%endfor%}
+  {%elsif page.layout == 'article'%}
+    {%include elem/article.html%}
+    {%include elem/navigate.html%}
+  {%endif%}
+</main>

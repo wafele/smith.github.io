@@ -1,0 +1,30 @@
+title      : Tertanda
+name       : Tertanda
+author     : Wafele & Co
+description: Tertanda
+email      : halo@tertanda.com
+
+baseurl  : ""
+url      : ""
+future   : true
+permalink: pretty
+
+gems:
+  - jekyll-sitemap
+
+sass:
+  style: :compressed
+
+kramdown:
+  auto_ids    : false
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+compress_html:
+  clippings: all
+  comments : ["<!-- ", " -->"]
+  endings  : all
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
